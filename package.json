@@ -1,0 +1,65 @@
+{
+  "name": "reduxBoiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "chokidar-socket-emitter": "^0.5.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0",
+    "jspm": "^0.16.32",
+    "react": "^15.1.0",
+    "react-router": "^2.0.1"
+  },
+  "scripts": {
+    "start": "NODE_ENV=prod node server.js",
+    "build": "NODE_ENV=prod gulp && jspm bundle-sfx app/main.js public/app.js --minify",
+    "dev": "NODE_ENV=dev gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "build",
+    "boilerplate"
+  ],
+  "author": "Bryan Schauerte",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "jspm": {
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "babel-plugin-transform-decorators-legacy": "npm:babel-plugin-transform-decorators-legacy@^1.3.4",
+      "babel-polyfill": "npm:babel-polyfill@^6.16.0",
+      "express": "npm:express@^4.13.4",
+      "isomorphic-fetch": "npm:isomorphic-fetch@^2.2.1",
+      "jsonp": "npm:jsonp@^0.2.0",
+      "react": "npm:react@^15.0.0",
+      "react-dom": "npm:react-dom@^15.0.0",
+      "react-redux": "npm:react-redux@^4.4.5",
+      "react-router": "npm:react-router@^2.0.1",
+      "reddit-api": "npm:reddit-api@^0.0.24",
+      "redux": "npm:redux@^3.5.1",
+      "redux-devtools": "npm:redux-devtools@^3.3.1",
+      "redux-logger": "npm:redux-logger@^2.6.1",
+      "redux-promise-middleware": "npm:redux-promise-middleware@^4.1.0",
+      "redux-thunk": "npm:redux-thunk@^2.0.1",
+      "scss": "github:KevCJones/plugin-scss@^0.2.6"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.6"
+    }
+  }
+}
