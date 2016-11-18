@@ -1,19 +1,17 @@
 import React from 'react';
 import {Router, Route, browserHistory} from 'react-router';
-import { createStore, applyMiddleware, combineReducers } from 'redux'
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import {Provider} from 'react-redux';
+import App from './horizontalProductView/App';
+import promise from "redux-promise-middleware";
+import thunkMiddleware from 'redux-thunk';
+import createLogger from 'redux-logger';
+import rootReducer from './reducers/rootReducer';
 
-import App from './components/app/App';
-
-import promise from "redux-promise-middleware"
-import thunkMiddleware from 'redux-thunk'
-import createLogger from 'redux-logger'
-import counter from './reducers/counter'
-
-import rootReducer from './reducers/index'
 const loggerMiddleware = createLogger();
 const promiseMiddleWare = promise();
-// const middleware = applyMiddleware(thunkMiddleware, loggerMiddleware, promiseMiddleWare)
+
+
 
 const store = createStore(
     rootReducer,

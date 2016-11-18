@@ -1,3 +1,72 @@
+#productContainer .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: 700ms;
+  transition: 700ms; }
+
+#productContainer .product {
+  background-color: blue;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+#productContainer .setUp {
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+#productContainer .activeProduct {
+  -webkit-transition: all 700ms ease-in;
+  transition: all 700ms ease-in;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -ms-flex-positive: 2;
+      flex-grow: 2; }
+
+#productContainer .inActiveProduct {
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+#productContainer .productImage {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#productContainer .item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-transition: all 2s;
+  transition: all 2s; }
+
+#productContainer .collapse {
+  -webkit-box-flex: 0.001;
+      -ms-flex-positive: 0.001;
+          flex-grow: 0.001; }
+
 li {
   color: cornflowerblue;
   font-size: 20px; }

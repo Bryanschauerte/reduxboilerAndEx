@@ -1,0 +1,46 @@
+#productContainer{
+
+  .products{
+    display: flex;
+    flex-direction: row;
+    transition: 700ms;
+  }
+  .product{
+    background-color: blue;
+    transition: 700ms;
+    display: flex;
+    flex: 1;
+  }
+  .setUp{
+    transition: 700ms;
+    flex:1;
+  }
+  .activeProduct{
+    transition: all 700ms ease-in;
+      flex: 2;
+      flex-grow:2;
+
+  }
+  .inActiveProduct{
+  transition:  700ms;
+    background-color: blue;
+    display: flex;
+    flex:1;
+
+
+  }
+  .productImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    transition: all 2s;
+}
+
+.collapse {
+    flex-grow: 0.001;
+}
+};

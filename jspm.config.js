@@ -16,12 +16,15 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-polyfill": "npm:babel-polyfill@6.16.0",
     "babel-runtime": "npm:babel-runtime@5.8.38",
+    "classnames": "npm:classnames@2.2.5",
     "core-js": "npm:core-js@1.2.7",
     "express": "npm:express@4.13.4",
     "isomorphic-fetch": "npm:isomorphic-fetch@2.2.1",
     "jsonp": "npm:jsonp@0.2.0",
-    "react": "npm:react@15.3.2",
-    "react-dom": "npm:react-dom@15.0.1",
+    "react": "npm:react@15.4.0",
+    "react-addons-css-transition-group": "npm:react-addons-css-transition-group@15.3.2",
+    "react-dom": "npm:react-dom@15.4.0",
+    "react-motion": "npm:react-motion@0.4.5",
     "react-redux": "npm:react-redux@4.4.5",
     "react-router": "npm:react-router@2.3.0",
     "redux": "npm:redux@3.6.0",
@@ -216,7 +219,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "pako": "npm:pako@0.2.9",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "readable-stream": "npm:readable-stream@2.1.5",
+      "readable-stream": "npm:readable-stream@2.2.2",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:browserslist@1.3.1": {
@@ -399,15 +402,14 @@ System.config({
       "utils-merge": "npm:utils-merge@1.0.0",
       "vary": "npm:vary@1.0.1"
     },
-    "npm:fbjs@0.8.5": {
+    "npm:fbjs@0.8.6": {
       "core-js": "npm:core-js@1.2.7",
-      "immutable": "npm:immutable@3.8.1",
       "isomorphic-fetch": "npm:isomorphic-fetch@2.2.1",
       "loose-envify": "npm:loose-envify@1.3.0",
       "object-assign": "npm:object-assign@4.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "promise": "npm:promise@7.1.1",
-      "ua-parser-js": "npm:ua-parser-js@0.7.10"
+      "ua-parser-js": "npm:ua-parser-js@0.7.12"
     },
     "npm:finalhandler@0.4.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -454,7 +456,7 @@ System.config({
     },
     "npm:isomorphic-fetch@2.2.1": {
       "node-fetch": "npm:node-fetch@1.6.3",
-      "whatwg-fetch": "npm:whatwg-fetch@1.0.0"
+      "whatwg-fetch": "npm:whatwg-fetch@2.0.1"
     },
     "npm:js-base64@2.1.9": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
@@ -527,6 +529,9 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:performance-now@0.2.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:postcss@5.0.19": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "js-base64": "npm:js-base64@2.1.9",
@@ -566,13 +571,30 @@ System.config({
     "npm:query-string@3.0.3": {
       "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
     },
+    "npm:raf@3.3.0": {
+      "performance-now": "npm:performance-now@0.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:randombytes@2.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:react-dom@15.0.1": {
-      "react": "npm:react@15.3.2"
+    "npm:react-addons-css-transition-group@15.3.2": {
+      "react": "npm:react@15.4.0"
+    },
+    "npm:react-dom@15.4.0": {
+      "fbjs": "npm:fbjs@0.8.6",
+      "loose-envify": "npm:loose-envify@1.3.0",
+      "object-assign": "npm:object-assign@4.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.4.0"
+    },
+    "npm:react-motion@0.4.5": {
+      "performance-now": "npm:performance-now@0.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "raf": "npm:raf@3.3.0",
+      "react": "npm:react@15.4.0"
     },
     "npm:react-redux@4.4.5": {
       "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
@@ -580,7 +602,7 @@ System.config({
       "lodash": "npm:lodash@4.16.4",
       "loose-envify": "npm:loose-envify@1.3.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "react": "npm:react@15.3.2",
+      "react": "npm:react@15.4.0",
       "redux": "npm:redux@3.6.0"
     },
     "npm:react-router@2.3.0": {
@@ -589,8 +611,8 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "warning": "npm:warning@2.1.0"
     },
-    "npm:react@15.3.2": {
-      "fbjs": "npm:fbjs@0.8.5",
+    "npm:react@15.4.0": {
+      "fbjs": "npm:fbjs@0.8.6",
       "loose-envify": "npm:loose-envify@1.3.0",
       "object-assign": "npm:object-assign@4.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -605,7 +627,7 @@ System.config({
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
     },
-    "npm:readable-stream@2.1.5": {
+    "npm:readable-stream@2.2.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "buffer-shims": "npm:buffer-shims@1.0.0",
       "core-util-is": "npm:core-util-is@1.0.2",
@@ -623,7 +645,7 @@ System.config({
     },
     "npm:redux-devtools@3.3.1": {
       "lodash": "npm:lodash@4.16.4",
-      "react": "npm:react@15.3.2",
+      "react": "npm:react@15.4.0",
       "react-redux": "npm:react-redux@4.4.5",
       "redux": "npm:redux@3.6.0",
       "redux-devtools-instrument": "npm:redux-devtools-instrument@1.3.2"
@@ -712,7 +734,7 @@ System.config({
       "media-typer": "npm:media-typer@0.3.0",
       "mime-types": "npm:mime-types@2.1.10"
     },
-    "npm:ua-parser-js@0.7.10": {
+    "npm:ua-parser-js@0.7.12": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:url@0.10.3": {
