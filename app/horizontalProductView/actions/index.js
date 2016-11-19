@@ -30,7 +30,12 @@ export function addProductArray(arr=[]){
         }
 
 }
-
+export function selectIndex(index){
+  return {
+    type: "SELECT_INDEX",
+    payload: index
+  }
+}
 export function addProduct(
   obj={
     title:null,

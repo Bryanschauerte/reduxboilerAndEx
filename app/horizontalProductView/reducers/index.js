@@ -58,14 +58,8 @@ export default function horizontalPView (
           case 'ADD_PRODUCT_ARRAY':
             return {...state, productArray:action.payload}
 
-          case 'CHANGE_HAPPENING':
-
-              return {...state, changeDone:false, changeHappening:true}
-
-
-          case 'CHANGE_DONE':
-
-              return {...state, changeDone:true, changeHappening:false}
+          case 'SELECT_INDEX':
+            return {...state, index: action.payload}
 
           case 'ADD_PRODUCT':
             const products = state.productArray;
